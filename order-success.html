@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Success - Jhalak Bangle Store</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8f5;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .success-box {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+    }
+    .success-box h1 {
+      color: #4caf50;
+      margin-bottom: 20px;
+    }
+    .success-box p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .success-box .details {
+      margin-top: 20px;
+      text-align: left;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .success-box a {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #e91e63;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .success-box a:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-box">
+    <h1>🎉 Order Placed Successfully!</h1>
+    <p>Thank you for shopping at <strong>Jhalak Bangle Store</strong>.</p>
+    <div class="details" id="orderDetails">
+      <!-- Order details will be injected here -->
+    </div>
+    <a href="index.html">Continue Shopping</a>
+  </div>
+
+  <script>
+    const order = JSON.parse(localStorage.getItem("orderConfirmation"));
+
+    if (order) {
+      document.getElementById("orderDetails").innerHTML = `
+        <p><strong>Name:</strong> ${order.name}</p>
+        <p><strong>Email:</strong> ${order.email}</p>
+        <p><strong>Phone:</strong> ${order.phone}</p>
+        <p><strong>Address:</strong> ${order.address}</p>
+        <p><strong>Payment Method:</strong> ${order.payment}</p>
+        <p><strong>Total Amount:</strong> ₹${order.total}</p>
+      `;
+      localStorage.removeItem("orderConfirmation");
+    } else {
+      document.getElementById("orderDetails").innerHTML = "<p>No order details found.</p>";
+    }
+  </script>
+</body>
+</html>

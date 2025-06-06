@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Jhalak Bangle Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+     <img src="/Jhalak Bangle Store/img2.png" height="70px" width="auto" alt="">
+      <!-- <a href="index.html" class="logo">Jhalak</a> -->
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+      </ul>
+      
+      <div class="search-container">
+        <form class="search-form">
+          <input type="text" placeholder="Search products..." class="search-input">
+          <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gallery Hero Section -->
+  <header class="gallery-hero">
+    <div class="container hero-content" data-aos="fade-up">
+      <h1>Our Gallery</h1>
+      <p>Discover the Beauty and Elegance of Our Collection</p>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="traditional">Traditional</button>
+        <button class="filter-btn" data-filter="modern">Modern</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="traditional" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://leshya.com/cdn/shop/products/1233_300x300.jpg?v=1688381690" alt="Traditional Bangles">
+          <div class="gallery-overlay">
+            <h3>Traditional Collection</h3>
+            <p>Handcrafted with love</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="modern" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://i.pinimg.com/736x/26/37/d6/2637d657d389af21d8d7ed0edc93ea66.jpg">
+          <div class="gallery-overlay">
+            <h3>Modern Design</h3>
+            <p>Contemporary elegance</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="bridal" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://tajbridalstore.in/cdn/shop/files/Untitled_1_c137c9e9-5515-4019-9e19-e51b184d189f.webp?v=1697714596">
+          <div class="gallery-overlay">
+            <h3>Bridal Collection</h3>
+            <p>Perfect for your special day</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://cdn0.weddingwire.in/article/1526/3_2/1280/jpg/66251-bangle-images-bride-emotions-lead.webp">
+          <div class="gallery-overlay">
+            <h3>Fashion Show 2023</h3>
+            <p>Showcasing our latest collection</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="traditional" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://lh4.googleusercontent.com/proxy/t_ShDEgshdCOkx2gA7RIQQGJQOZU_ycl2eXgFNIrPFYevRVny1yFcujN9C5N9ux9YbU3AEwgahiwQMb872DAO0IVANH-uODlQ275cd-3Ou-zX8xC3miwOa6DSjGt9Dy7Uo28bq7-NC3hbCGujaxeBHCvRVOyvJb_oesEX0UoZgcBHKXbssToiKHe0-BdTtfJz88FNvy2LHVm-hkKEgoGYKhwrwsUi6LTVs7U_Rl31neymMnzjwi1fdv9JcEQn2cNyqXEO0yCP2WceKTTUHeB8NSYhNO8I-E">
+          <div class="gallery-overlay">
+            <h3>Artisan at Work</h3>
+            <p>Crafting with precision</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="bridal" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://tajbridalstore.in/cdn/shop/files/Untitled_99f3159a-0740-47d4-b289-1f06d6de027e.webp?v=1716275123" alt="Bridal Set">
+          <div class="gallery-overlay">
+            <h3>Royal Bridal Set</h3>
+            <p>Fit for a queen</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="modern" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://www.gehnaindia.com/_next/image?url=https%3A%2F%2Fcdn-images.gehnaindia.com%2Fproducts%2Fwebsite_picture1s%2F000%2F010%2F380%2Foriginal%2FGHDIBG-3806.jpg%3F1627277651&w=3840&q=75">
+          <div class="gallery-overlay">
+            <h3>Minimalist Collection</h3>
+            <p>Simple yet elegant</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsA-1f4EDje6QgMOgbX9xTlJT8bqPgNzb2mQ&s" alt="Store Event">
+          <div class="gallery-overlay">
+            <h3>Simple Collection</h3>
+            <p>Simple yet elegant</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://png.pngtree.com/thumb_back/fh260/background/20241203/pngtree-indian-colorful-bangles-displayed-in-local-shop-a-market-of-pune-image_16258521.jpg" alt="Store Event">
+          <div class="gallery-overlay">
+            <h3>Store Anniversary</h3>
+            <p>Celebrating 13 years</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Feed -->
+  <section class="instagram-feed">
+    <div class="container">
+      <div class="instagram-header">
+        <h3 class="instagram-title">Follow Us on Instagram</h3>
+        <a href="#" class="instagram-handle">
+          <i class="fab fa-instagram"></i> @jhalakbangles
+        </a>
+      </div>
+      
+      <div class="instagram-grid">
+        <div class="instagram-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKJrw2uOg0ZXSKdZ4AP7qngzXmxkoKOlQuXw&s">
+          <div class="instagram-overlay">
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+        <div class="instagram-item" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://2.wlimg.com/product_images/bc-full/2023/9/11959235/watermark/multicolor-wedding-anniversary-designer-brass-1693549647-7052799.jpeg">
+          <div class="instagram-overlay">
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+        <div class="instagram-item" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://4.imimg.com/data4/WA/JL/ANDROID-29279000/product-500x500.jpeg">
+          <div class="instagram-overlay">
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+        <div class="instagram-item" data-aos="zoom-in" data-aos-delay="400">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2024/3/397662859/GL/BY/QR/205081511/22-6-500x500.jpeg">
+          <div class="instagram-overlay">
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Jhalak Bangles</h4>
+        <p>Since 2013, bringing you timeless elegance and quality fashion accessories. Crafted with passion and tradition.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/jhalakbanglestore602/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul class="footer-links">
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Care Instructions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>005 Shigaon Street, Bhandarwada, Boisar(w), Maharashtra, India</p>
+        <p>Phone: +91 95189 94296</p>
+        <p>Email: info@jhalakbangles.com</p>
+        <p>Hours: Mon-Sat 10AM - 8PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Jhalak Bangles. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <img src="" alt="Gallery image">
+      <button class="close-lightbox"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

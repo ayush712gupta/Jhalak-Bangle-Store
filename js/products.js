@@ -191,3 +191,25 @@ document.addEventListener('DOMContentLoaded', () => {
     el.textContent = cartItems.length;
   });
 });
+
+
+    function showPopup(itemName) {
+      const popup = document.getElementById('popup');
+      const popupMsg = document.getElementById('popup-message');
+      popupMsg.textContent = `${itemName} added to cart!`;
+      popup.style.display = 'block';
+
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 3000);
+    }
+
+    // Example: attach to "Add to Cart" buttons
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function () {
+        const itemName = this.getAttribute('data-name');
+        showPopup(itemName);
+      });
+    });
+
+  

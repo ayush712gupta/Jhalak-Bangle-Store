@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Update cart summary
   function updateSummary(subtotal) {
-    const tax = subtotal * 0.18;
+    const tax = subtotal * 0;
     const total = subtotal + tax;
     
     subtotalElement.textContent = `₹${subtotal.toLocaleString()}`;

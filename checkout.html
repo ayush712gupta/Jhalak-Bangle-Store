@@ -6,16 +6,24 @@
   <title>Checkout - Jhalak Bangle Store</title>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/checkout.css">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/BVnz7QgN/img2.png">
 </head>
 <body>
-  <header>
-    <h1>Jhalak Bangle Store</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="cart.html">Cart</a>
-    </nav>
-  </header>
+  <nav class="navbar fixed-navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+      <img src="https://i.ibb.co/BVnz7QgN/img2.png" height="60" alt="Jhalak Logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
 
   <main class="checkout-container">
     <section class="checkout-form">
@@ -53,10 +61,7 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Jhalak Bangle Store. All rights reserved.</p>
-  </footer>
-
+  
   <script src="js/checkout.js"></script>
 </body>
 </html>

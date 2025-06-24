@@ -232,3 +232,26 @@
     height: 250px;
   }
 }
+
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ceb18d;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  animation: fadeinout 3s ease-in-out;
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+}
